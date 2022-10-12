@@ -1,0 +1,164 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #90e0ef;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.columnlogin{
+ @apply text-teal_900 tracking-ls1 uppercase w-[auto]; 
+}
+.Label{
+ @apply font-medium mb-[1px] text-black_900 tracking-ls1 w-[auto]; 
+}
+.ContainerInp{
+ @apply font-normal not-italic p-[0] xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-bluegray_200 tracking-ls1 w-[100%]; 
+}
+.rowconfirmation{
+ @apply font-normal not-italic text-black_901 tracking-ls1 w-[auto]; 
+}
+.Link{
+ @apply font-medium mb-[3px] lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] text-blue_A700 tracking-ls1 w-[auto]; 
+}
+.notification{
+ @apply lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] lg:w-[21px] xl:w-[26px] 2xl:w-[30px] 3xl:w-[36px]; 
+}
+.orkiyalogopng3{
+ @apply lg:h-[40px] xl:h-[50px] 2xl:h-[57px] 3xl:h-[68px] xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] w-[69%]; 
+}
+.wrap{
+ @apply font-medium text-bluegray_901 tracking-ls1 w-[auto]; 
+}
+.trendingdown{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.columnjaydonherwitz{
+ @apply font-medium lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] mt-[1px] text-bluegray_900 w-[auto]; 
+}
+.Column{
+ @apply bg-cyan_200 font-medium lg:pl-[11px] xl:pl-[14px] 2xl:pl-[16px] 3xl:pl-[19px] lg:pr-[24px] xl:pr-[31px] 2xl:pr-[35px] 3xl:pr-[42px] xl:py-[10px] 2xl:py-[12px] 3xl:py-[14px] lg:py-[8px] text-black_902 w-[118px]; 
+}
+.Row4{
+ @apply font-medium 3xl:ml-[10px] lg:ml-[6px] xl:ml-[8px] 2xl:ml-[9px] text-black_902 w-[auto]; 
+}
+.columntopselling{
+ @apply font-normal not-italic text-black_902 w-[auto]; 
+}
+.columnproductcounter{
+ @apply font-medium lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] text-bluegray_900 w-[auto]; 
+}
+.bag{
+ @apply lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] w-[100%]; 
+}
+.bag_One{
+ @apply lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:mt-[20px] xl:mt-[25px] 2xl:mt-[29px] 3xl:mt-[34px] w-[100%]; 
+}
+.Content{
+ @apply items-center justify-start p-[2px] w-[100%]; 
+}
+.iTem1{
+ @apply font-normal not-italic text-bluegray_702 w-[auto]; 
+}
+.orkiyalogopng4{
+ @apply lg:h-[40px] xl:h-[50px] 2xl:h-[57px] 3xl:h-[68px] w-[69%]; 
+}
+.Input{
+ @apply font-normal not-italic text-gray_900 tracking-ls1 w-[auto]; 
+}
+.Input1{
+ @apply font-normal not-italic p-[0] xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-bluegray_201 tracking-ls1 w-[100%]; 
+}
+.columnloremipsumis{
+ @apply font-normal lg:leading-[17px] xl:leading-[21px] 2xl:leading-[24px] 3xl:leading-[28px] mr-[3px] lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] not-italic text-bluegray_500 tracking-ls1 w-[99%]; 
+}
+.signal{
+ @apply 3xl:h-[10px] lg:h-[6px] xl:h-[8px] 2xl:h-[9px] lg:mt-[19px] xl:mt-[24px] 2xl:mt-[27px] 3xl:mt-[32px] lg:w-[5px] xl:w-[7px] 2xl:w-[8px] 3xl:w-[9px]; 
+}
+.Label3{
+ @apply font-medium mt-[4px] text-black_900 tracking-ls1 w-[auto]; 
+}
+.rowuploadcoverim{
+ @apply font-bold lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.close{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] mb-[4px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.ProductName{
+ @apply bg-cyan_200 font-medium lg:pl-[11px] xl:pl-[14px] 2xl:pl-[16px] 3xl:pl-[19px] lg:pr-[24px] xl:pr-[31px] 2xl:pr-[35px] 3xl:pr-[42px] xl:py-[11px] 2xl:py-[13px] 3xl:py-[15px] lg:py-[9px] rounded-bl-[8px] rounded-br-[0] rounded-tl-[8px] rounded-tr-[0] text-bluegray_900 w-[211px]; 
+}
+.listellipsetwelve_one{
+ @apply items-center xl:my-[2px] lg:my-[2px] 3xl:my-[3px] 2xl:my-[3px] lg:pr-[20px] xl:pr-[25px] 2xl:pr-[29px] 3xl:pr-[34px] w-[100%]; 
+}
+.Row6{
+ @apply font-medium mt-[1px] xl:text-[10px] 2xl:text-[12px] 3xl:text-[14px] lg:text-[8px] text-blue_800 underline w-[auto]; 
+}
+.Label4{
+ @apply font-medium mt-[1px] text-black_900 tracking-ls1 w-[auto]; 
+}
+.columnone{
+ @apply font-normal mt-[1px] not-italic text-black_902 w-[auto]; 
+}
+.columnzipcode_five{
+ @apply font-semibold mt-[1px] text-black_902 w-[auto]; 
+}
